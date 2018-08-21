@@ -1,0 +1,25 @@
+h1 {
+    text-align: center;
+    color:lightcoral;
+}
+table{
+    border-collapse: separate;
+    background-color: powderblue;
+}
+th {
+    background-color: lightcoral;
+    color: linen;
+}
+tr {
+    background-color: linen;
+    color: lightcoral;
+}
+.money{
+    text-align:right;
+}
+button{
+    width: 25px;
+}
+table{
+    text-align: center;
+}
