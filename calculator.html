@@ -8,7 +8,6 @@
     <meta name="keywords" content="Pineapple jelly, Анастасия Лежнина, искусство">
     <title>Калькулятор</title>
 
-    <script type="text/javascript" src="main.js"></script>
 
     <link rel="stylesheet" href="main.css">
 </head>
@@ -21,36 +20,37 @@
     </thead>
     <tr>
         <td colspan="4">
-            <input type="text" id="num-input" title="Поле" >
+            <input type="text" id="num-input" title="Поле" value="0">
         </td>
     </tr>
     <tbody>
     <tr>
-        <td><button>1</button></td>
-        <td><button>2</button></td>
-        <td><button>3</button></td>
-        <td><button>+</button></td>
+        <td><button class="button" id="num1">1</button></td>
+        <td><button class="button" id="num2">2</button></td>
+        <td><button class="button" id="num3">3</button></td>
+        <td><button class="button" >+</button></td>
     </tr>
     <tr>
-        <td><button>4</button></td>
-        <td><button>5</button></td>
-        <td><button>6</button></td>
-        <td><button>-</button></td>
+        <td><button class="button" id="num4">4</button></td>
+        <td><button class="button" id="num5">5</button></td>
+        <td><button class="button" id="num6">6</button></td>
+        <td><button class="button" >-</button></td>
     </tr>
     <tr>
-        <td><button>7</button></td>
-        <td><button>8</button></td>
-        <td><button>9</button></td>
-        <td><button>*</button></td>
+        <td><button class="button" id="num7">7</button></td>
+        <td><button class="button" id="num8">8</button></td>
+        <td><button class="button" id="num9">9</button></td>
+        <td><button class="button">*</button></td>
     </tr>
     <tr>
-        <td><button><</button></td>
-        <td><button>0</button></td>
-        <td><button>.</button></td>
-        <td><button>/</button></td>
+        <td><button class="button" id="backspace-button"><</button></td>
+        <td><button class="button" id="num0">0</button></td>
+        <td><button class="button">.</button></td>
+        <td><button class="button">/</button></td>
     </tr>
     </tbody>
 </table>
+<script type="text/javascript" src="main.js"></script>
 </body>
 </html>
 
