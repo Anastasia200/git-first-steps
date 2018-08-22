@@ -24,6 +24,5 @@ for (let i = 0; i < numButtons.length; i++) {
     }
 }
 
-
 // DOM - Document Object Model
 // BOM -Browser Object Model
