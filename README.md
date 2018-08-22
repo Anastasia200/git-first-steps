@@ -69,3 +69,7 @@
 Ячейка 1      | Ячейка 2
 Ячейка 3      | Ячейка 4
 
+### Работа с Javaskript 
+* DOM - Document Object Model
+* BOM -Browser Object Model 
+
