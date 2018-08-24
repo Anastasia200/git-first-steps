@@ -3,7 +3,17 @@ const input = document.getElementById('num-input');
 const backspaseButton = document.getElementById('backspace-button');
 let p = false;
 let num = 0;
+let lop = null;
 
+const numButtons = document.getElementsByClassName('button');
+
+for (let i = 0; i < numButtons.length; i++) {
+    const button = numButtons [i];
+    const num = button.textContent;
+    button.onclick = () => {
+        enterNumber(num)
+    }
+}
 backspaseButton.onclick = () => {
     if (input.value.length === 1) {
         input.value = "0";
@@ -16,6 +26,7 @@ enterNumber = (n) => {
         input.value = n;
     } else {
         if (p) {
+            num = parseFloat(input.value);
             input.value = n;
             p = false;
         } else {
@@ -24,21 +35,17 @@ enterNumber = (n) => {
     }
 };
 
-const numButtons = document.getElementsByClassName('button');
-
-for (let i = 0; i < numButtons.length; i++) {
-    const button = numButtons [i];
-    const num = button.textContent;
-    button.onclick = () => {
-        enterNumber(num)
-    }
-}
 
 const dispatchOperation = (operation) => {
-    num = processOperation(operation,  parseFloat(input.value),num);
-    console.log(num);
-    input.value = num;
+    console.log(operation, lop);
+    if (lop) {
+        if (!p) {
+            num = processOperation(lop, num, parseFloat(input.value));
+            input.value = num;
+        }
+    }
     p = true;
+    lop = operation;
 };
 const processOperation = (operation, argument1, argument2) => {
     console.log(operation, argument1, argument2);
